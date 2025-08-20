@@ -1,0 +1,315 @@
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.navbar{
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 2px 10px rgba(238, 218, 218, 0.05);
+    
+}
+
+.menu-toggle {
+            display: none;
+}
+
+
+.menu-btn {
+    display: none; 
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;     
+}
+
+@media (max-width: 768px) {
+            .menu-btn {
+                display: block; /* Show hamburger button */
+            }
+            
+            li {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: white;
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                display: none; /* Hidden by default */
+            }
+            
+            /* === THE MAGIC === */
+            /* When checkbox is checked, show the menu */
+           
+            
+
+            #menuToggle:checked ~ li {
+                display: flex;
+            }
+
+             #menuToggle:checked + .menu-btn::before {
+                content: "✕";
+            }
+            
+            /* Change hamburger to X when menu is open */
+            .menu-toggle:checked ~ .menu-btn::before {
+                content: "✕"; /* X icon */
+            }
+        }
+
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.logo a{
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 70px;
+    color: #2a4a7a !important;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 40px;
+}
+
+li a{
+    font-family: "Mozilla Headline", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    margin-right: 10px;
+    transition: all 0.3s ease 0s;
+    justify-content: space-between;
+}
+
+li a:hover{
+    color:#b6ccfe;
+}
+
+h1{
+     font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero{
+    background: linear-gradient(#b6ccfe,#d7e3fc);
+    text-align: center;
+    padding: 100px 0px;
+    font-size: 25px;
+    font-family:'Playfair Display', serif;
+}
+.hero {
+    animation: fadeIn 1s ease-in;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 35px;
+}
+
+.shop-now{
+    border-radius: 10px;
+    padding:10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: #e0fbfc;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.shop-now:hover{
+    background-color:#b6ccfe ;
+}
+
+.flex1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+
+
+.product-card{
+    background: linear-gradient(#b6ccfe,#d7e3fc);
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 100%;
+    background-color: b6ccfe;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease ;
+    overflow: hidden;
+    align-items: center;
+}
+
+.product-card:hover{
+    transform: translateY(-10px);
+}
+
+.product-card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-card h2{
+    font-family: "Nata Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 10px;
+    text-align: center;
+}
+
+.product-card div{
+    
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-tag{
+    background: linear-gradient(#bde0fe,#ade8f4);
+    color: black;
+    font-size: 25px;
+    border-radius: 7px;
+    padding: 5px 15px;
+    display: inline-block;
+}
+
+.atc{
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    background: linear-gradient(#bde0fe,#ade8f4);
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.atc:hover{
+   background-color:#0077b6 ; 
+}
+
+.details{
+    padding: 10px;
+}
+
+.container-spring{
+    font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.flex2{
+    background-color: #b6ccfe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.feat{
+    margin-left:100px;
+    margin-right: 100px;
+    padding: 10px;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    
+}
+
+.feature-icon{
+    padding-top: 0px;
+    align-items: center;
+    margin: 50px;
+    font-size: 30px;
+}
+
+h2{
+    text-align: center;
+    margin: 50px;
+    align-items: center;
+}
+
+.explain{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.container-spring2{
+    background-color: #b6ccfe;
+    padding: 10px;
+
+}
+
+.containerf{
+    background-color: #023e8a;
+    font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.flex3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #023e8a;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: white;
+    
+}
+
+.foot{
+    color: white;
+    text-align: center;
+    font-family: "Borel", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+
+
+
+
